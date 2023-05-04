@@ -130,3 +130,21 @@ h6 {
     border-right: 2px solid #eaeaea;
   }
 }
+@font-face {
+  font-family: "TTLakesRegular";
+  src: url(../fonts/TTLakes-Regular.woff);
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "TTLakesMedium";
+  src: url(../fonts/TTLakes-Medium.woff);
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "TTLakesBold";
+  src: url(../fonts/TTLakes-Bold.woff);
+  font-style: normal;
+  font-weight: normal;
+}
