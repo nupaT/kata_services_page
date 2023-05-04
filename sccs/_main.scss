@@ -57,3 +57,31 @@
   letter-spacing: -0.2px;
   color: #7e7e82;
 }
+
+.describe {
+  margin: 14px 16px 0;
+}
+
+.describe__text {
+  margin: 0 0 16px 0;
+  white-space: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  color: #1B1C21;
+}
+
+.more {
+}
+.more__button {
+}
+.more__button--img {
+  margin: 0 6px 0 0;
+}
+
+.more__button--text {
+  // font-family: 'TT Lakes';
+font-size: 16px;
+line-height: 24px;
+letter-spacing: -0.2px;
+}

@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "TTLakesRegular";
+  src: url(../fonts/TTLakes-Regular.woff);
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "TTLakesMedium";
+  src: url(../fonts/TTLakes-Medium.woff);
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "TTLakesBold";
+  src: url(../fonts/TTLakes-Bold.woff);
+  font-style: normal;
+  font-weight: normal;
+}
 /*default*/
 * {
   padding: 0;
@@ -194,24 +212,30 @@ h6 {
   color: #7e7e82;
 }
 
-@font-face {
-  font-family: "TTLakesRegular";
-  src: url(../fonts/TTLakes-Regular.woff);
-  font-style: normal;
-  font-weight: normal;
+.describe {
+  margin: 14px 16px 0;
 }
-@font-face {
-  font-family: "TTLakesMedium";
-  src: url(../fonts/TTLakes-Medium.woff);
-  font-style: normal;
-  font-weight: normal;
+
+.describe__text {
+  margin: 0 0 16px 0;
+  white-space: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+  color: #1B1C21;
 }
-@font-face {
-  font-family: "TTLakesBold";
-  src: url(../fonts/TTLakes-Bold.woff);
-  font-style: normal;
-  font-weight: normal;
+
+.more__button--img {
+  margin: 0 6px 0 0;
 }
+
+.more__button--text {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
 html {
   font-family: "TTLakesRegular";
+  max-width: 320px;
 }
