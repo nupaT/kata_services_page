@@ -3,6 +3,7 @@
   align-items: center;
   width: 100vw;
   height: 88px;
+  border-bottom: 1px solid #D9FFF5;
 }
 
 .nav {
@@ -16,10 +17,13 @@
 }
 
 .nav-button {
+  display: flex;
   width: 40px;
   height: 40px;
   background-color: #ff3e79;
   border-radius: 50%;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {

@@ -1,5 +1,9 @@
+.main {
+  background-color: #F8F8F8;
+}
+
 .title {
-  margin: 24px 16px 0 0;
+  padding: 24px 16px 0 0;
   display: flex;
 }
 
@@ -23,22 +27,26 @@
 
 .slider {
   margin: 24px 0 0 16px;
+  padding: 0 0 10px 0;
+  overflow-x: auto;
 }
 
 .slider__list {
   display: flex;
-  overflow-x: scroll;
 }
 
-// !!!! посмотреть про бордер при фокусе
 .slider__item {
+  display: flex;
+  align-items: center;
   margin: 0 20px 0 0;
-  padding: 8px 17px;
 }
 
-.slider__item:focus {
+.slider__item--active {
   border: 2px solid #b8ffec;
   border-radius: 6px;
+  margin: 0 20px 0 0;
+  padding: 6px 15px;
+  background-color: #ffffff;
 }
 
 .slider__link {

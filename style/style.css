@@ -92,6 +92,7 @@ h6 {
   align-items: center;
   width: 100vw;
   height: 88px;
+  border-bottom: 1px solid #D9FFF5;
 }
 
 .nav {
@@ -105,10 +106,13 @@ h6 {
 }
 
 .nav-button {
+  display: flex;
   width: 40px;
   height: 40px;
   background-color: #ff3e79;
   border-radius: 50%;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
@@ -130,8 +134,12 @@ h6 {
     border-right: 2px solid #eaeaea;
   }
 }
+.main {
+  background-color: #F8F8F8;
+}
+
 .title {
-  margin: 24px 16px 0 0;
+  padding: 24px 16px 0 0;
   display: flex;
 }
 
@@ -155,21 +163,26 @@ h6 {
 
 .slider {
   margin: 24px 0 0 16px;
+  padding: 0 0 10px 0;
+  overflow-x: auto;
 }
 
 .slider__list {
   display: flex;
-  overflow-x: scroll;
 }
 
 .slider__item {
+  display: flex;
+  align-items: center;
   margin: 0 20px 0 0;
-  padding: 8px 17px;
 }
 
-.slider__item:focus {
+.slider__item--active {
   border: 2px solid #b8ffec;
   border-radius: 6px;
+  margin: 0 20px 0 0;
+  padding: 6px 15px;
+  background-color: #ffffff;
 }
 
 .slider__link {
