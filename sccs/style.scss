@@ -1,5 +1,6 @@
 @import "_default";
 @import "_header";
+@import "_main";
 
 @font-face {
   font-family: "TTLakesRegular";
@@ -20,4 +21,8 @@
   src: url(../fonts/TTLakes-Bold.woff);
   font-style: normal;
   font-weight: normal;
+}
+
+html {
+  font-family: "TTLakesRegular";
 }
