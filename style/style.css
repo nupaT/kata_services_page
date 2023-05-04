@@ -95,8 +95,8 @@ h6 {
 }
 
 .nav {
-  display: flex;
   margin: 0 16px;
+  display: flex;
   align-items: center;
 }
 
