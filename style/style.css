@@ -90,6 +90,8 @@ h6 {
 .header {
   display: flex;
   align-items: center;
+  width: 100vw;
+  height: 88px;
 }
 
 .nav {
@@ -109,7 +111,22 @@ h6 {
   border-radius: 50%;
 }
 
-.header {
-  width: 100vw;
-  height: 88px;
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.repair-butt {
+  margin-right: 16px;
+}
+
+@media (max-width: 320px) {
+  .logo::after {
+    content: "";
+    display: block;
+    margin: 0 20px 0 16px;
+    height: 32px;
+    align-items: center;
+    border-right: 2px solid #eaeaea;
+  }
 }
