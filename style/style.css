@@ -235,6 +235,10 @@ h6 {
   letter-spacing: -0.2px;
 }
 
+.signboard {
+  margin: 16px 0 0 0;
+}
+
 html {
   font-family: "TTLakesRegular";
   max-width: 320px;
