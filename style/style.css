@@ -142,6 +142,10 @@ h6 {
   align-items: center;
 }
 
+.own-menu {
+  display: none;
+}
+
 .status-menu {
   display: flex;
   align-items: center;
