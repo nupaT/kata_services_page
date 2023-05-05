@@ -16,7 +16,7 @@
   justify-content: space-between;
 }
 
-.burger-butt {
+.nav__burger-butt {
   margin-right: 16px;
 }
 
@@ -30,7 +30,7 @@
   justify-content: center;
 }
 
-.logo {
+.nav__logo {
   display: flex;
   align-items: center;
 }
@@ -44,13 +44,13 @@
 .status-menu::before {
     content: "";
     display: block;
-    margin: 0 16.7px 0 20px;
+    margin: 0 19px 0 17px;
     height: 32px;
     align-items: center;
     border-left: 2px solid #eaeaea;
   }
 }
 
-.repair-butt {
+.status-menu__repair-butt {
   margin-right: 16px;
 }
