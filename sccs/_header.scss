@@ -81,6 +81,18 @@
   border-radius: 2px;
 }
 
+@media (max-width: 320px) {
+  .nav__burger_logo::before{
+    display: none;
+  }
+  .nav__burger_butt {
+    margin: 0 16px 0 0;
+  }
+  .menu__item:nth-last-child(2)::before {
+    margin: 0 20px 0 16px;  //? уползает если не поставить (кастыль)
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1120px) {
   .menu__item:nth-last-child(n+3) {
     display: flex;
