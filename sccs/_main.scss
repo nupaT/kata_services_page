@@ -2,12 +2,12 @@
   background-color: #F8F8F8;
 }
 
-.title {
-  padding: 24px 16px 0 0;
+.main__title {
+  padding: 24px 0 0 0;
   display: flex;
 }
 
-.title::before {
+.main__title::before {
   content: "";
   margin: 0 12px 0 0;
   display: flex;
@@ -25,7 +25,7 @@
   color: #1b1c21;
 }
 
-.slider {
+.main__slider {
   margin: 24px 0 0 16px;
   padding: 0 0 10px 0;
   overflow-x: auto;
@@ -59,11 +59,11 @@
 }
 
 .describe {
-  margin: 14px 16px 0;
+  // margin: 14px 0 0;
 }
 
 .describe__text {
-  margin: 0 0 16px 0;
+  margin: 15px 0 0 0;
   white-space: normal;
   font-size: 14px;
   line-height: 18px;
@@ -71,23 +71,21 @@
   color: #1B1C21;
 }
 
-.more {
-}
-.more__button {
-}
-.more__button--img {
-  margin: 0 6px 0 0;
+.describe__more {
+  display: block;
+  margin: 15px 0 0 0;
 }
 
-.more__button--text {
+.more__button_img {
+  margin: 0 5px 0 0;
+}
+
+.more__button_text {
 font-size: 16px;
 line-height: 24px;
 letter-spacing: -0.2px;
 }
 
-.signboard {
+.main__signboard {
   margin: 16px 0 0 0;
-}
-
-.signboard__img {
 }
