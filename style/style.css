@@ -113,10 +113,14 @@ h6 {
   border-bottom: 1px solid #D9FFF5;
 }
 
+.wrapper {
+  margin: 0 auto;
+}
+
 .nav {
-  margin: 0 16px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .burger-butt {
@@ -138,20 +142,25 @@ h6 {
   align-items: center;
 }
 
+.status-menu {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 320px) {
+  .status-menu::before {
+    content: "";
+    display: block;
+    margin: 0 16.7px 0 20px;
+    height: 32px;
+    align-items: center;
+    border-left: 2px solid #eaeaea;
+  }
+}
 .repair-butt {
   margin-right: 16px;
 }
 
-@media (max-width: 320px) {
-  .logo::after {
-    content: "";
-    display: block;
-    margin: 0 20px 0 16px;
-    height: 32px;
-    align-items: center;
-    border-right: 2px solid #eaeaea;
-  }
-}
 .main {
   background-color: #F8F8F8;
 }
