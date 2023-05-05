@@ -9,31 +9,43 @@
   </head>
   <body>
     <article class="header">
-      <section class="header__nav nav wrapper"> <!-- ? -->
-        <button class="nav__burger-butt nav-button">
-          <img src="icon/burger.png" alt="burger-button" />
-        </button>
-        <div class="nav__logo">
-          <img src="icon/logo.png" alt="logo" />
-        </div>
-        <section class="nav__own-menu own-menu">
-          <button class="own-menu__call-butt nav-button">
-            <img src="icon/call.png" alt="call">
+      <section class="header__nav nav wrapper"> <!-- ? wrapper-->
+        <section class="nav__burger">
+          <button class="nav__burger_butt nav-button">
+            <img src="icon/burger.png" alt="burger-button" />
           </button>
-          <button class="own-menu__chat-butt nav-button">
-            <img src="icon/chat.png" alt="call">
-          </button>
-          <button class="own-menu__profile-butt nav-button">
-            <img src="icon/profile.png" alt="call">
-          </button>
+          <div class="nav__burger_logo">
+            <img src="icon/logo.png" alt="logo" />
+          </div>
         </section>
-        <section class="nav__status-menu status-menu">
-          <button class="status-menu__repair-butt nav-button">
-            <img src="icon/repair.png" alt="repair" />
-          </button>
-          <button class="status-menu__checkstatus-butt nav-button">
-            <img src="icon/checkstatus.png" alt="checkstatus" />
-          </button>
+        <section class="nav__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <button class="menu__call-butt nav-button hidden"> <!--? hidden-->
+                <img src="icon/call.png" alt="call">
+              </button>
+            </li>
+            <li class="menu__item">
+              <button class="menu__chat-butt nav-button hidden">
+                <img src="icon/chat.png" alt="chat">
+              </button>
+            </li>
+            <li class="menu__item">
+              <button class="menu__profile-butt nav-button hidden">
+                <img src="icon/profile.png" alt="profile">
+              </button>
+            </li>
+            <li class="menu__item">
+              <button class="menu__repair-butt nav-button">
+                <img src="icon/repair.png" alt="repair" />
+              </button>
+            </li>
+            <li class="menu__item">
+              <button class="menu__checkstatus-butt nav-button">
+                <img src="icon/checkstatus.png" alt="checkstatus" />
+              </button>
+            </li>
+          </ul>
         </section>
       </section>
     </article>
