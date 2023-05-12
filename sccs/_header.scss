@@ -6,6 +6,12 @@
   border-bottom: 1px solid #D9FFF5;
 }
 
+@media (min-width: 1121px) {
+  .header {
+    display: none;
+  }
+}
+
 .wrapper {
   margin: 0 16px;
 }
@@ -66,10 +72,6 @@
   display: none;
 }
 
-// .menu__item:nth-last-child(2) {
-//   margin: 0;
-// }
-
 .menu__item:nth-last-child(2)::before,
 .nav__burger_logo::before {
   content: '';
@@ -86,7 +88,7 @@
   .menu__item:nth-last-child(2)::before {
     margin: 0 20px 0 16px;  //? уползает если не поставить (кастыль)
   }
-}
+
 
 @media (min-width: 768px) and (max-width: 1120px) {
   .menu__item:nth-last-child(n+3) {
