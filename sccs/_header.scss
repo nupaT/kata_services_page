@@ -8,7 +8,6 @@
 
 .wrapper {
   margin: 0 16px;
-  // flex: 1 1 auto;  //? 
 }
 
 //? position @media
@@ -67,9 +66,9 @@
   display: none;
 }
 
-.menu__item:nth-last-child(2) {
-  margin: 0;
-}
+// .menu__item:nth-last-child(2) {
+//   margin: 0;
+// }
 
 .menu__item:nth-last-child(2)::before,
 .nav__burger_logo::before {
@@ -81,10 +80,6 @@
   border-radius: 2px;
 }
 
-@media (max-width: 320px) {
-  .nav__burger_logo::before{
-    display: none;
-  }
   .nav__burger_butt {
     margin: 0 16px 0 0;
   }
