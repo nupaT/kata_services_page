@@ -73,8 +73,19 @@
   color: #7e7e82;
 }
 
+.main__describe {
+  padding: 24px 0 0 0;
+}
+
+@media (min-width: 768px) and (max-width: 1120px) {
+  .main__describe {
+    display: flex;
+    padding: 24px 0 0 24px;
+  }
+}
+
 .describe__text {
-  margin: 15px 0 0 0;
+  margin: 15px 16px 0;
   white-space: normal;
   font-size: 14px;
   line-height: 18px;
@@ -82,21 +93,67 @@
   color: #1B1C21;
 }
 
+@media (min-width: 768px) and (max-width: 1120px) {
+  .describe__text {
+    margin: 0;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }
+}
+
+.describe__text_paragraph {
+  overflow: hidden;
+  max-height: 90px;
+}
+
+@media (min-width: 768px) and (max-width: 1120px) {
+  .describe__text_paragraph {
+    overflow: hidden;
+    max-width: 312px;
+    max-height: 160px;
+  }
+}
+
 .describe__more {
   display: block;
   margin: 15px 0 0 0;
 }
 
+@media (min-width: 768px) and (max-width: 1120px) {
+  .describe__more {
+    display: block;
+    margin: 10px 0 0 0;
+  }
+}
 .more__button_img {
   margin: 0 5px 0 0;
 }
 
 .more__button_text {
-font-size: 16px;
-line-height: 24px;
-letter-spacing: -0.2px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
 }
 
 .main__signboard {
   margin: 16px 0 0 0;
+}
+
+@media (min-width: 768px) and (max-width: 1120px) {
+  .main__signboard {
+    margin: 0 0 40px 48px;
+  }
+}
+
+.signboard_img-768 {
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1120px) {
+  .signboard_img-768 {
+    display: block;
+  }
+  .signboard_img-320 {
+    display: none;
+  }
 }
