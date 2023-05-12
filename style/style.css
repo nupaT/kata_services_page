@@ -330,10 +330,34 @@ h6 {
   color: #7e7e82;
 }
 
+.feedback {
+  display: none;
+}
+
+@media (min-width: 1121px) {
+  .feedback {
+    display: flex;
+    margin: 0 0 0 56px;
+  }
+}
+.feedback__title {
+  font-family: "TTLakesRegular";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #7E7E82;
+}
+
 @media (min-width: 768px) and (max-width: 1120px) {
   .main__describe {
     display: flex;
     padding: 24px 0 0 24px;
+  }
+}
+@media (min-width: 1120px) {
+  .main__describe {
+    display: flex;
+    justify-content: space-between;
   }
 }
 .describe__text {
@@ -352,6 +376,13 @@ h6 {
     letter-spacing: 0.2px;
   }
 }
+@media (min-width: 1120px) {
+  .describe__text {
+    margin: 0;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+  }
+}
 .describe__text_paragraph {
   overflow: hidden;
   max-height: 90px;
@@ -361,6 +392,13 @@ h6 {
   .describe__text_paragraph {
     overflow: hidden;
     max-width: 312px;
+    max-height: 160px;
+  }
+}
+@media (min-width: 1120px) {
+  .describe__text_paragraph {
+    overflow: hidden;
+    max-width: 490px;
     max-height: 160px;
   }
 }
@@ -398,12 +436,27 @@ h6 {
   display: none;
 }
 
+.signboard_img-1120 {
+  display: none;
+}
+
 @media (min-width: 768px) and (max-width: 1120px) {
   .signboard_img-768 {
     display: block;
   }
   .signboard_img-320 {
     display: none;
+  }
+}
+@media (min-width: 1120px) {
+  .signboard_img-768 {
+    display: none;
+  }
+  .signboard_img-320 {
+    display: none;
+  }
+  .signboard_img-1120 {
+    display: block;
   }
 }
 html {
