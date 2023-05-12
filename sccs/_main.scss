@@ -17,6 +17,13 @@
   border-bottom-right-radius: 4px;
 }
 
+@media (min-width: 768px) and (max-width: 1120px) {
+  .main__title::before {
+    content: "";
+    margin: 0 20px 0 0;
+  }
+}
+
 .title__text {
   font-family: "TTLakesBold";
   font-size: 28px;
@@ -29,6 +36,14 @@
   margin: 24px 0 0 16px;
   padding: 0 0 10px 0;
   overflow-x: auto;
+}
+
+@media (min-width: 768px) and (max-width: 1120px) {
+  .main__slider {
+    margin: 32px 0 0 24px;
+    padding: 0 0 10px 0;
+    overflow-x: auto;
+  }
 }
 
 .slider__list {
