@@ -150,9 +150,14 @@
   color: #7E7E82;
 }
 
+.main__describe {
+  margin: 0;
+}
+
 @media (min-width: 768px) and (max-width: 1120px) {
   .main__describe {
     display: flex;
+    margin: 10px 0 0 24px;
     justify-content: space-between; //responsive
   }
 }
@@ -165,7 +170,7 @@
 }
 
 .describe__text {
-  margin: 15px 16px 0;
+  margin: 0 0 0 16px; ////!!!!!
   white-space: normal;
   font-size: 14px;
   line-height: 18px;
