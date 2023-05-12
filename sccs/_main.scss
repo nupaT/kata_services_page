@@ -73,7 +73,6 @@
   margin: 0 9px 0 0;
   font-family: 'TTLakesMedium';
   font-size: 16px;
-  // font-weight: 700;
   line-height: 24px;
   letter-spacing: -0.2px;
   color: #1B1C21;
@@ -143,10 +142,6 @@
   }
 }
 
-.feedback__button {
-  
-}
-
 .feedback__title {
   font-family: 'TTLakesRegular';
   font-size: 16px;
@@ -158,15 +153,14 @@
 @media (min-width: 768px) and (max-width: 1120px) {
   .main__describe {
     display: flex;
-    padding: 24px 0 0 24px;
+    justify-content: space-between; //responsive
   }
 }
 
 @media (min-width: 1120px) {
   .main__describe {
     display: flex;
-    justify-content: space-between;
-    // padding: 20px 0 0 35px;
+    justify-content: space-between;  //responsive
   }
 }
 
@@ -189,8 +183,10 @@
 
 @media (min-width: 1120px) {
   .describe__text {
-    margin: 0;
-    // padding: 16px;
+    //не ставил жесткий отступ справа
+    //чтобы можно было растягивать на большее разрешение
+    margin: 0 0 0 32px;  
+    padding: 21px 0 0 0;
     line-height: 20px;
     letter-spacing: 0.2px;
   }
@@ -249,31 +245,37 @@
   }
 }
 
-.signboard_img-768 {
+@media (min-width: 1120px) {
+  .main__signboard {
+    margin: 11px 0 0 0;
+  }
+}
+
+.signboard_img--768 {
   display: none;
 }
 
-.signboard_img-1120 {
+.signboard_img--1120 {
   display: none;
 }
 
 @media (min-width: 768px) and (max-width: 1120px) {
-  .signboard_img-768 {
+  .signboard_img--768 {
     display: block;
   }
-  .signboard_img-320 {
+  .signboard_img--320 {
     display: none;
   }
 }
 
 @media (min-width: 1120px) {
-  .signboard_img-768 {
+  .signboard_img--768 {
     display: none;
   }
-  .signboard_img-320 {
+  .signboard_img--320 {
     display: none;
   }
-  .signboard_img-1120 {
+  .signboard_img--1120 {
     display: block;
   }
 }

@@ -351,7 +351,7 @@ h6 {
 @media (min-width: 768px) and (max-width: 1120px) {
   .main__describe {
     display: flex;
-    padding: 24px 0 0 24px;
+    justify-content: space-between;
   }
 }
 @media (min-width: 1120px) {
@@ -378,7 +378,8 @@ h6 {
 }
 @media (min-width: 1120px) {
   .describe__text {
-    margin: 0;
+    margin: 0 0 0 32px;
+    padding: 21px 0 0 0;
     line-height: 20px;
     letter-spacing: 0.2px;
   }
@@ -432,30 +433,35 @@ h6 {
     margin: 0 0 40px 48px;
   }
 }
-.signboard_img-768 {
+@media (min-width: 1120px) {
+  .main__signboard {
+    margin: 11px 0 0 0;
+  }
+}
+.signboard_img--768 {
   display: none;
 }
 
-.signboard_img-1120 {
+.signboard_img--1120 {
   display: none;
 }
 
 @media (min-width: 768px) and (max-width: 1120px) {
-  .signboard_img-768 {
+  .signboard_img--768 {
     display: block;
   }
-  .signboard_img-320 {
+  .signboard_img--320 {
     display: none;
   }
 }
 @media (min-width: 1120px) {
-  .signboard_img-768 {
+  .signboard_img--768 {
     display: none;
   }
-  .signboard_img-320 {
+  .signboard_img--320 {
     display: none;
   }
-  .signboard_img-1120 {
+  .signboard_img--1120 {
     display: block;
   }
 }
