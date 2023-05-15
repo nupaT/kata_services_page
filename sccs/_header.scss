@@ -19,7 +19,7 @@
   }
 }
 
-// nav block
+/*-- nav start --*/
 
 .nav {
   display: flex;
@@ -69,7 +69,9 @@
   }
 }
 
-// menu block
+/*-- nav end --*/
+
+/*-- menu start --*/
 
 .menu {
   &__list {
@@ -78,7 +80,7 @@
   }
 
   &__item {
-    margin: 0 0 0 16px;
+    margin: 0 0 0 18px;
     display: flex;
     align-items: center;
 
@@ -104,3 +106,5 @@
     }
   }
 }
+
+/*-- menu end --*/
