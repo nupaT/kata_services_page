@@ -4,7 +4,7 @@
   height: 88px;
   border-bottom: 1px solid #D9FFF5;
 
-  @media (min-width: 1121px) {
+  @media (min-width: 1119px) {
     display: none;
   }
 }
@@ -13,7 +13,7 @@
   margin: 0 16px;
 
   @media (min-width: 768px){
-    @media (max-width: 1120px) {
+    @media (max-width: 1119px) {
       margin: 0 24px;
     }
   }
@@ -48,7 +48,7 @@
     margin: 0 0 0 15px;
 
     @media (min-width: 768px) {
-      @media (max-width: 1120px) {
+      @media (max-width: 1119px) {
         margin: 0;
       }
     }
@@ -96,7 +96,7 @@
     }
 
     @media (min-width: 768px) {
-      @media (max-width: 1120px) {
+      @media (max-width: 1119px) {
         &:nth-last-child(n+3) {
           display: flex;
         }
