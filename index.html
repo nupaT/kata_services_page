@@ -9,44 +9,42 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__nav nav wrapper"> <!-- ? wrapper-->
-        <div class="nav__burger">
-          <button class="nav__burger_butt nav--button">
-            <img src="icon/burger.png" alt="burger-button" />
+      <div class="header__nav wrapper">
+        <div class="header__burger">
+          <button class="header_button header--button">
+            <img src="icon/burger.png" alt="burger" />
           </button>
-          <div class="nav__burger_logo">
+          <a href="#!" class="header__logo-link">
             <img src="icon/logo.png" alt="logo" />
-          </div>
+          </a>
         </div>
-        <div class="nav__menu menu">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <button class="menu__call--butt nav--button">
-                <img src="icon/call.png" alt="call">
-              </button>
-            </li>
-            <li class="menu__item">
-              <button class="menu__chat--butt nav--button">
-                <img src="icon/chat.png" alt="chat">
-              </button>
-            </li>
-            <li class="menu__item">
-              <button class="menu__profile--butt nav--button">
-                <img src="icon/profile.png" alt="profile">
-              </button>
-            </li>
-            <li class="menu__item">
-              <button class="menu__repair--butt nav--button">
-                <img src="icon/repair.png" alt="repair" />
-              </button>
-            </li>
-            <li class="menu__item">
-              <button class="menu__checkstatus--butt nav--button">
-                <img src="icon/checkstatus.png" alt="checkstatus" />
-              </button>
-            </li>
-          </ul>
-        </div>
+        <ul class="header__actions">
+          <li class="header__action">
+            <button class="header--button">
+              <img src="icon/call.png" alt="call">
+            </button>
+          </li>
+          <li class="header__action">
+            <button class="header--button">
+              <img src="icon/chat.png" alt="chat">
+            </button>
+          </li>
+          <li class="header__action">
+            <button class="header--button">
+              <img src="icon/profile.png" alt="profile">
+            </button>
+          </li>
+          <li class="header__action">
+            <button class="header--button">
+              <img src="icon/repair.png" alt="repair" />
+            </button>
+          </li>
+          <li class="header__action">
+            <button class="header--button">
+              <img src="icon/checkstatus.png" alt="checkstatus" />
+            </button>
+          </li>
+        </ul>
       </div>
     </header>
     <article class="main">
@@ -55,9 +53,9 @@
         <section class="title__menu">
           <ul class="title__list">
             <li class="title__item">
-              <h2 class="title__item_text">Оставить заявку</h2><button class="title__repair--butt nav--button"><img src="icon/repair.png" alt="repair"></button></li>
+              <h2 class="title__item_text">Оставить заявку</h2><button class="title__repair--butt header--button"><img src="icon/repair.png" alt="repair"></button></li>
             <li class="title__item">
-              <span class="title__item_text">Статус ремонта</span><button class="title__checkstatus-butt nav--button"><img src="icon/checkstatus.png" alt="checkstatus"></button>
+              <span class="title__item_text">Статус ремонта</span><button class="title__checkstatus-butt header--button"><img src="icon/checkstatus.png" alt="checkstatus"></button>
               </li>
           </ul>
         </section>
