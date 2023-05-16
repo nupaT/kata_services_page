@@ -47,20 +47,15 @@
         </ul>
       </div>
     </header>
-    <article class="main">
-      <section class="main__title title">
-        <section class="title__block"><h2 class="title__text">Услуги и сервисы</h2></section>
-        <section class="title__menu">
-          <ul class="title__list">
-            <li class="title__item">
-              <h2 class="title__item_text">Оставить заявку</h2><button class="title__repair--butt header--button"><img src="icon/repair.png" alt="repair"></button></li>
-            <li class="title__item">
-              <span class="title__item_text">Статус ремонта</span><button class="title__checkstatus-butt header--button"><img src="icon/checkstatus.png" alt="checkstatus"></button>
-              </li>
-          </ul>
-        </section>
-      </section>
-      <section class="main__slider slider">
+    <main class="main">
+      <div class="main__container">
+        <h1 class="main__container_title">Услуги и сервисы</h1>
+        <div class="main__container_actions">
+          <button class="main__container_action"><span>Оставить заявку</span><img src="icon/repair.svg" alt="repair"></button>
+          <button class="main__container_action "><span>Статус ремонта</span><img class="header--button" src="icon/checkstatus.svg" alt="checkstatus"></button>
+        </div>
+      </div>
+      <nav class="main__slider slider">
         <ul class="slider__list">
           <li class="slider__item slider__item--active"><a class="slider__link" href="#!">Ремонтируемые устройства</a></li>
           <li class="slider__item"><a class="slider__link" href="#!">Дополнительные услуги</a></li>
@@ -68,11 +63,11 @@
           <li class="slider__item"><a class="slider__link" href="#!">Адреса сервисных центров</a></li>
           <li class="slider__item"><a class="slider__link" href="#!">Специальные цены</a></li>
         </ul>
-      </section>
-      <section class="feedback">
+      </nav>
+      <div class="feedback">
         <button class="feedback__button"><span class="feedback__title">Отзывы</span></button>
-      </section>
-      <section class="main__describe describe">
+      </div>
+      <div class="main__describe describe">
         <div class="describe__text">
           <div class="describe__text_paragraph">
           <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
@@ -92,7 +87,7 @@
           <img class="signboard_img--768" src="img/MG_768.png" alt="background_img" >
           <img class="signboard_img--1120" src="img/MG_1120.png" alt="background_img" >
         </div>
-      </section>
-    </article>
+      </div>
+    </main>
   </body>
 </html>
