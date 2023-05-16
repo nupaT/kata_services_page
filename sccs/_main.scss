@@ -12,8 +12,6 @@
   }
 }
 
-/*-- title start --*/
-
 .title{
   &__text {
     font-family: "TTLakesBold";
@@ -80,10 +78,6 @@
   }
 }
 
-/*-- title end --*/
-
-/*-- slider start --*/
-
 .slider {
   margin: 24px 0 0 16px;
   padding: 0 0 8px 0;
@@ -135,10 +129,6 @@
   }
 }
 
-/*-- slider end --*/
-
-/*-- feedback start --*/
-
 .feedback {
   display: none;
 
@@ -156,23 +146,19 @@
   }
 }
 
-/*-- feedback start --*/
-
-/*-- describe start --*/
-
 .describe {
   margin: 0;
 
   @media (min-width: 768px) {
     @media (max-width: 1119px) {
       display: flex;
-      justify-content: space-between; //responsive ?
+      justify-content: space-between; 
     }
   }
 
   @media (min-width: 1120px) {
     display: flex;
-    justify-content: space-between;  //responsive
+    justify-content: space-between;  
     padding: 0 29px 0 35px;
   }
 
@@ -248,10 +234,6 @@
 }
 }
 
-/*-- describe end --*/
-
-/*-- signboard start --*/
-
 .signboard {
   margin: 16px 0 0 0;
 
@@ -307,5 +289,3 @@
     }
   }
 }
-
-/*-- signboard end --*/

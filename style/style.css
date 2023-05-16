@@ -126,7 +126,6 @@ h6 {
   }
 }
 
-/*-- nav start --*/
 .nav {
   display: flex;
   width: 100%;
@@ -170,8 +169,6 @@ h6 {
   }
 }
 
-/*-- nav end --*/
-/*-- menu start --*/
 .menu__list {
   display: flex;
   align-items: center;
@@ -198,7 +195,6 @@ h6 {
   }
 }
 
-/*-- menu end --*/
 .main {
   background-color: #F8F8F8;
 }
@@ -213,7 +209,6 @@ h6 {
   }
 }
 
-/*-- title start --*/
 .title__text {
   font-family: "TTLakesBold";
   font-size: 28px;
@@ -269,8 +264,6 @@ h6 {
   color: #1B1C21;
 }
 
-/*-- title end --*/
-/*-- slider start --*/
 .slider {
   margin: 24px 0 0 16px;
   padding: 0 0 8px 0;
@@ -317,8 +310,6 @@ h6 {
   color: #7e7e82;
 }
 
-/*-- slider end --*/
-/*-- feedback start --*/
 .feedback {
   display: none;
 }
@@ -336,8 +327,6 @@ h6 {
   color: #7E7E82;
 }
 
-/*-- feedback start --*/
-/*-- describe start --*/
 .describe {
   margin: 0;
 }
@@ -415,8 +404,6 @@ h6 {
   letter-spacing: -0.2px;
 }
 
-/*-- describe end --*/
-/*-- signboard start --*/
 .signboard {
   margin: 16px 0 0 0;
 }
@@ -462,7 +449,6 @@ h6 {
     display: block;
   }
 }
-/*-- signboard end --*/
 html {
   font-family: "TTLakesRegular";
 }

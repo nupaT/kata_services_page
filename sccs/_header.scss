@@ -19,8 +19,6 @@
   }
 }
 
-/*-- nav start --*/
-
 .nav {
   display: flex;
   width: 100%;
@@ -69,10 +67,6 @@
   }
 }
 
-/*-- nav end --*/
-
-/*-- menu start --*/
-
 .menu {
   &__list {
     display: flex;
@@ -106,5 +100,3 @@
     }
   }
 }
-
-/*-- menu end --*/
