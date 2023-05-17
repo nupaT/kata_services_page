@@ -27,3 +27,17 @@
 html {
   font-family: "TTLakesRegular";
 }
+
+.button--circle {
+  display: flex;
+  min-width: 40px;
+  min-height: 40px;
+  background-color: #ff3e79;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color:#c81349;
+  }
+}
