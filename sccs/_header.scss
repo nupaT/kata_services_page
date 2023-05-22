@@ -1,7 +1,6 @@
 .header {
   display: flex;
   align-items: center;
-  // height: 88px;
   border-bottom: 1px solid #D9FFF5;
 
   @media (min-width: 1119px) {
@@ -10,8 +9,9 @@
 
   &__burger-menu {
     display: flex;
-    transform: translateX(-100%);
-    position: absolute;
+    // transform: translateX(-100%);
+    // position: absolute;
+    z-index: 5;
     flex-direction: column;
     height: 1024px;
     background-color: #ffffff;
@@ -123,7 +123,7 @@
   }
 
   &__nav {
-    display: flex;
+    display: none;
     height: 88px;
     align-items: center;
     justify-content: space-between;
