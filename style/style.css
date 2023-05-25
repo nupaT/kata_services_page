@@ -249,7 +249,7 @@ h6 {
 }
 .aside-menu__contacts {
   margin-top: auto;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .aside-menu__buttons {
   display: flex;
@@ -275,21 +275,21 @@ h6 {
 }
 .aside-menu__lang {
   display: flex;
-  -moz-column-gap: 7px;
-       column-gap: 7px;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
 }
 .aside-menu__lang-btn {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  display: none;
+}
+.aside-menu__lang-btn:checked + label {
+  color: #7E7E82;
+}
+.aside-menu__lang-text {
   font-family: "TTLakesMedium";
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
   color: #1B1C21;
-}
-.aside-menu__lang-btn:checked + label {
-  color: #7E7E82;
 }
 
 .main {

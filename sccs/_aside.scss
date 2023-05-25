@@ -69,7 +69,7 @@
 
     &__contacts {
       margin-top: auto;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
     }
 
     &__buttons {
@@ -98,19 +98,22 @@
 
     &__lang{
       display: flex;
-      column-gap: 7px;
+      column-gap: 8px;
 
       &-btn {
-        appearance: none;
+        display: none;
+        
+        &:checked + label {
+          color: #7E7E82;
+        }
+      }
+      
+      &-text{
         font-family: 'TTLakesMedium';
         font-size: 16px;
         line-height: 24px;
         letter-spacing: -0.2px;
         color: #1B1C21;
-  
-        &:checked + label {
-          color: #7E7E82;
-        }
       }
     }
   }
