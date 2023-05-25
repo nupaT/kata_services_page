@@ -10,16 +10,14 @@
   <body>
     <header class="header">
       <aside class="aside-menu">
-        <div class="aside-menu_nav">
-          <!-- <div class="aside-menu_container"> -->
+        <div class="aside-menu__header">
             <button class="button--circle">
               <img src="icon/close.png" alt="close">
             </button>
             <a href="#!" class="header__logo-link">
               <img src="icon/logo.png" alt="logo" />
             </a>
-          <!-- </div> -->
-          <button class="aside-menu_search button--circle">
+          <button class="aside-menu_search-btn button--circle">
             <img src="icon/search.png" alt="search" />
           </button>
         </div>
@@ -45,17 +43,14 @@
               <img src="icon/profile.png" alt="search" />
             </button>
           </div>
-          <div class="aside-menu_mail">
-            <a class="header__burger-menu_mail-link" href="mailto:mail@cps.com">mail@cps.com</a>
-          </div>
-          <div class="aside-menu_phone">
-            <a class="header__burger-menu_phone-link" href="tel:8 800 890 8900 ">8 800 890 8900</a>
-          </div>
+            <a class="aside-menu_mail-link" href="mailto:mail@cps.com">mail@cps.com</a>
+            <a class="aside-menu_phone-link" href="tel:8 800 890 8900 ">8 800 890 8900</a>
         </div>
-        <div class="aside-menu_lang">
-          <div class="aside-menu_lang--active">RU</div>
-          <div>EN</div>
-          <div>CH</div>
+        <div class="aside-menu__lang">
+          <input type="radio" class="aside-menu__lang-btn" id="lang-ru" name="lang" value="ru" checked>
+          <label for="lang-ru">RU</label>
+          <input type="radio" class="aside-menu__lang-btn" id="lang-en" name="lang" value="en" ><label for="lang-en">EN</label>
+          <input type="radio" class="aside-menu__lang-btn" id="lang-ch" name="lang" value="ch"><label for="lang-ch">CH</label>
         </div>
       </aside>
       <div class="header__nav wrapper">

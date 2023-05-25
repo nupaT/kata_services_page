@@ -198,33 +198,31 @@ h6 {
   flex-direction: column;
   width: 320px;
   height: 1024px;
-  padding: 19px 24px 0;
+  padding: 19px 24px 32px;
   background-color: #ffffff;
   box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
 }
-.aside-menu_nav {
+.aside-menu__header {
   display: flex;
+  margin: 0 0 47px 0;
   align-items: center;
   justify-content: space-between;
   height: 50px;
   -moz-column-gap: 16px;
        column-gap: 16px;
 }
-.aside-menu_search {
+.aside-menu_search-btn {
   margin-left: auto;
 }
 .aside-menu__navigation {
   display: flex;
+  position: relative;
   flex-direction: column;
-  padding: 62px 0 0 0;
   row-gap: 32px;
   font-family: "TTLakesMedium";
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
-}
-.aside-menu__item {
-  padding: 0 0 0 24px;
 }
 .aside-menu__item--active {
   padding: 4px 0 0 0;
@@ -235,6 +233,8 @@ h6 {
 }
 .aside-menu__item--active::before {
   content: "";
+  position: absolute;
+  left: -24px;
   margin: 0 20px 0 0;
   height: 32px;
   border-right: 4px solid #41f6d7;
@@ -248,44 +248,47 @@ h6 {
   color: #7E7E82;
 }
 .aside-menu__contacts {
-  padding: 264px 0 0 24px;
+  margin-top: auto;
+  margin-bottom: 50px;
 }
 .aside-menu__buttons {
   display: flex;
   -moz-column-gap: 16px;
        column-gap: 16px;
 }
-.aside-menu_mail {
+.aside-menu_mail-link {
+  display: block;
   padding: 16px 0 0 0;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
-}
-.aside-menu_mail-link {
   color: #1B1C21;
 }
-.aside-menu_phone {
+.aside-menu_phone-link {
+  display: block;
   padding: 12px 0 0 0;
   font-family: "TTLakesBold";
   font-size: 24px;
   line-height: 32px;
   letter-spacing: -0.6px;
-}
-.aside-menu_phone-link {
   color: #1B1C21;
 }
-.aside-menu_lang {
+.aside-menu__lang {
   display: flex;
-  padding: 40px 0 0 24px;
   -moz-column-gap: 7px;
        column-gap: 7px;
+}
+.aside-menu__lang-btn {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   font-family: "TTLakesMedium";
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
   color: #1B1C21;
 }
-.aside-menu_lang--active {
+.aside-menu__lang-btn:checked + label {
   color: #7E7E82;
 }
 
