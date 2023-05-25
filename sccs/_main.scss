@@ -155,6 +155,7 @@
     
     &_text {
       max-height: 90px;
+      max-width: 288px;
       overflow: hidden;
 
       @media (min-width: 768px) {
