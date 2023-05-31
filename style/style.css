@@ -421,46 +421,6 @@ h6 {
   text-transform: uppercase;
   color: #7E7E82;
 }
-.main__brands_actions {
-  margin: 0 0 16px 0;
-  overflow-x: auto;
-  display: flex;
-  -moz-column-gap: 16px;
-       column-gap: 16px;
-}
-.main__brands_link {
-  padding: 20px 16px;
-  display: flex;
-  height: 72px;
-  width: 240px;
-  align-items: center;
-  justify-content: space-between;
-  border: 1px solid #EAEAEA;
-  border-radius: 6px;
-}
-.main__brands_butt {
-  height: 40px;
-  width: 40px;
-  border: 2px solid #FF3E79;
-  border-radius: 50%;
-  background: url("/icon/right_arrow.png") no-repeat 50% 50%;
-}
-.main__brands_paginations {
-  display: flex;
-  -moz-column-gap: 16px;
-       column-gap: 16px;
-  justify-content: center;
-}
-.main__brands_pagination {
-  display: flex;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #DDDDDD;
-}
-.main__brands_pagination--active {
-  background-color: #B5B6BC;
-}
 
 html {
   font-family: "TTLakesRegular";
