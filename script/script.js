@@ -1,6 +1,8 @@
+const swiperDisable = document.querySelector('.swiper-disable');
+
 
 window.addEventListener('resize', function () {
-  if(this.innerWidth < 768) {
+  if(this.innerWidth < 768 && swiperDisable) {
     let swiper = new Swiper('.swiper', {
       slidesPerView: 1,
       width: 240,
@@ -14,7 +16,9 @@ window.addEventListener('resize', function () {
         spaceBetween: 12,
       },
     });
-  } else {
+  } 
+  
+  if (this.innerWidth >= 768) {
     swiper.destroy();
   }
 });
