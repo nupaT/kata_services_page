@@ -1,13 +1,20 @@
 .main {
   background-color: #F8F8F8;
 
+  @media (min-width: 768px) {
+    @media (max-width: 1119px){
+      padding: 24px 24px 0;
+    }
+  }
+
   @media (min-width: 1120px) {
-    padding: 18px 0 0 0;
+    padding: 18px 24px 0 24px; //!!
   }
 
   &__container {
-    padding: 24px 32px 0 0;
+    // padding: 24px 32px 0 0;  //!!  320
     display: flex;
+    margin: 0 0 32px 0;
     justify-content: space-between;
 
     &_title{
@@ -19,25 +26,13 @@
 
       &::before {
         content: "";
-        margin: 0 12px 0 0;
+        position: relative;
+        left: -24px;  //!!
+        // margin: 0 12px 0 0;
         height: inherit;
         border-right: 4px solid #41f6d7;
         border-top-right-radius: 4px;
         border-bottom-right-radius: 4px;
-      }
-
-      @media (min-width: 768px) {
-        @media (max-width: 1119px) {
-          &::before{
-          margin: 0 20px 0 0;
-          }
-        }
-      }
-
-      @media (min-width: 1120px) {
-        &::before {
-        margin: 0 30px 0 0;
-        }
       }
     }
 
@@ -69,12 +64,13 @@
   }
 
   &__navigation {
-    padding: 24px 25px 10px 16px;
+    // padding: 24px 25px 10px 16px; //!!! 320
     overflow-x: auto;
 
     @media (min-width: 768px) {
       @media (max-width: 1119px){
-        padding: 32px 0 0 24px;
+        // padding: 32px 0 0 24px;
+        margin: 0 0 32px 0;
         overflow-x: auto;
       }
     }
@@ -124,7 +120,9 @@
   }
 
   &__about {
-    padding: 14px 0 0 0;
+    // padding: 14px 0 0 0; //!! 320
+    // display: flex;
+    // justify-content: space-between;
     white-space: normal;
     font-size: 14px;
     line-height: 18px;
@@ -135,7 +133,7 @@
       @media (max-width: 1119px) {
         display: flex;
         justify-content: space-between;
-        padding: 32px 0 0 8px; 
+        // padding: 32px 0 0 8px; !!
       }
     }
 
@@ -146,10 +144,10 @@
     }
 
     &_text-container {
-      padding: 0 16px;
+      // padding: 0 16px; //!!
 
       @media (min-width: 1120px) {
-        padding: 10px 16px 0;
+        // padding: 10px 16px 0;
       }
     }
     
@@ -190,6 +188,7 @@
   }
 
   &__signboard{
+    margin: 0 0 32px 0; //!! 320
     padding: 16px 0 0 0;
 
     @media (min-width: 768px) {
@@ -221,7 +220,7 @@
       @media (min-width: 768px) {
         @media (max-width: 1119px) {
           display: block;
-          padding: 0 24px 0 0;
+          // padding: 0 24px 0 0;
         }
       }
   
@@ -241,7 +240,12 @@
   }
 
   &__brands {
-    padding: 16px 16px;
+    // padding: 16px 16px; //!!320
+
+    @media (min-width: 768px) {
+      @media (max-width: 1119px) {
+      }
+    }
 
     &_title {
       margin: 0 0 16px 0;
@@ -251,50 +255,13 @@
       letter-spacing: -0.2px;
       text-transform: uppercase;
       color: #7E7E82;
+
+      @media (min-width: 768px) {
+        @media (max-width: 1119px) {
+          display: flex;
+          margin: 0 0 40px 0;
+        }
+      }
     }
-
-  //   &_actions {
-  //     margin: 0 0 16px 0;
-  //     overflow-x: auto;
-  //     display: flex;
-  //     column-gap: 16px;
-  //   }
-
-  //   &_link {
-  //     padding: 20px 16px;
-  //     display: flex;
-  //     height: 72px;
-  //     width: 240px;
-  //     align-items: center;
-  //     justify-content: space-between;
-  //     border: 1px solid #EAEAEA;
-  //     border-radius: 6px;
-  //   }
-    
-  //   &_butt {
-  //     height: 40px;
-  //     width: 40px;
-  //     border: 2px solid #FF3E79;
-  //     border-radius: 50%;
-  //     background: url("/icon/right_arrow.png") no-repeat 50% 50%;
-  //   }
-    
-  //   &_paginations {
-  //     display: flex;
-  //     column-gap: 16px;
-  //     justify-content: center;
-  //   }
-
-  //   &_pagination {
-  //     display: flex;
-  //     width: 12px;
-  //     height: 12px;
-  //     border-radius: 50%;
-  //     background-color: #DDDDDD;
-        
-  //     &--active {
-  //       background-color: #B5B6BC;
-  //     }
-  //   }
   }
 }

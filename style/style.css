@@ -192,14 +192,19 @@ h6 {
 .main {
   background-color: #F8F8F8;
 }
+@media (min-width: 768px) and (max-width: 1119px) {
+  .main {
+    padding: 24px 24px 0;
+  }
+}
 @media (min-width: 1120px) {
   .main {
-    padding: 18px 0 0 0;
+    padding: 18px 24px 0 24px;
   }
 }
 .main__container {
-  padding: 24px 32px 0 0;
   display: flex;
+  margin: 0 0 32px 0;
   justify-content: space-between;
 }
 .main__container_title {
@@ -211,21 +216,12 @@ h6 {
 }
 .main__container_title::before {
   content: "";
-  margin: 0 12px 0 0;
+  position: relative;
+  left: -24px;
   height: inherit;
   border-right: 4px solid #41f6d7;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
-}
-@media (min-width: 768px) and (max-width: 1119px) {
-  .main__container_title::before {
-    margin: 0 20px 0 0;
-  }
-}
-@media (min-width: 1120px) {
-  .main__container_title::before {
-    margin: 0 30px 0 0;
-  }
 }
 .main__container_actions {
   display: none;
@@ -252,12 +248,11 @@ h6 {
   background-color: #c81349;
 }
 .main__navigation {
-  padding: 24px 25px 10px 16px;
   overflow-x: auto;
 }
 @media (min-width: 768px) and (max-width: 1119px) {
   .main__navigation {
-    padding: 32px 0 0 24px;
+    margin: 0 0 32px 0;
     overflow-x: auto;
   }
 }
@@ -302,7 +297,6 @@ h6 {
   color: #7e7e82;
 }
 .main__about {
-  padding: 14px 0 0 0;
   white-space: normal;
   font-size: 14px;
   line-height: 18px;
@@ -313,7 +307,6 @@ h6 {
   .main__about {
     display: flex;
     justify-content: space-between;
-    padding: 32px 0 0 8px;
   }
 }
 @media (min-width: 1120px) {
@@ -321,14 +314,6 @@ h6 {
     display: flex;
     justify-content: space-between;
     padding: 10px 26px 0 19px;
-  }
-}
-.main__about_text-container {
-  padding: 0 16px;
-}
-@media (min-width: 1120px) {
-  .main__about_text-container {
-    padding: 10px 16px 0;
   }
 }
 .main__about_text {
@@ -365,6 +350,7 @@ h6 {
   }
 }
 .main__signboard {
+  margin: 0 0 32px 0;
   padding: 16px 0 0 0;
 }
 @media (min-width: 768px) and (max-width: 1119px) {
@@ -393,7 +379,6 @@ h6 {
 @media (min-width: 768px) and (max-width: 1119px) {
   .main__signboard_img--768 {
     display: block;
-    padding: 0 24px 0 0;
   }
 }
 @media (min-width: 1120px) {
@@ -409,9 +394,6 @@ h6 {
     display: block;
   }
 }
-.main__brands {
-  padding: 16px 16px;
-}
 .main__brands_title {
   margin: 0 0 16px 0;
   font-family: "TTLakesRegular";
@@ -420,6 +402,12 @@ h6 {
   letter-spacing: -0.2px;
   text-transform: uppercase;
   color: #7E7E82;
+}
+@media (min-width: 768px) and (max-width: 1119px) {
+  .main__brands_title {
+    display: flex;
+    margin: 0 0 40px 0;
+  }
 }
 
 /**
@@ -648,13 +636,32 @@ h6 {
 .swiper-wrapper {
   padding: 0 0 26px 0;
 }
+@media (min-width: 768px) and (max-width: 1119px) {
+  .swiper-wrapper {
+    display: flex !important;
+    flex-wrap: wrap;
+    -moz-column-gap: 24px;
+         column-gap: 24px;
+    row-gap: 16px;
+  }
+}
+.swiper-slide {
+  display: flex;
+}
 .swiper-slide_link {
+  height: 72px !important;
+  width: 240px !important;
   padding: 20px 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border: 1px solid #EAEAEA;
   border-radius: 6px;
+}
+@media (min-width: 768px) and (max-width: 1119px) {
+  .swiper-slide_link {
+    width: 224px !important;
+  }
 }
 .swiper-slide_butt {
   height: 40px;
@@ -677,7 +684,7 @@ h6 {
   width: 12px !important;
   height: 12px !important;
   border-radius: 50% !important;
-  background-color: #333333 !important;
+  background-color: #DDDDDD !important;
 }
 .swiper-pagination-bullet-active {
   background-color: #B5B6BC !important;
