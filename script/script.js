@@ -37,4 +37,13 @@ window.addEventListener('resize', () => {
 });
 
 
+// !!
+
+let readMore = document.querySelector('.main__about_show_more-btn');
+let showTExt = document.querySelector('.main__about_text');
+
+readMore.addEventListener('click', () => {
+  showTExt.classList.toggle('main__about_text--show');
+})
+
 

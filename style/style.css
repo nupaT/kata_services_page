@@ -335,6 +335,7 @@ h6 {
   max-height: 90px;
   max-width: 288px;
   overflow: hidden;
+  transition-duration: 0.8s;
 }
 @media (min-width: 768px) and (max-width: 1120px) {
   .main__about_text {
@@ -349,6 +350,10 @@ h6 {
     max-width: 490px;
     max-height: 160px;
   }
+}
+.main__about_text--show {
+  max-height: 100%;
+  transition-duration: 0.8s;
 }
 .main__about_show_more-btn {
   display: flex;
