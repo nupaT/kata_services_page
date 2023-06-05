@@ -1,9 +1,10 @@
-const swiperDisable = document.querySelector('.swiper-disable');
+const slider = document.querySelector('.swiper');
 
+let brandSwiper;
 
-window.addEventListener('resize', function () {
-  if(this.innerWidth < 768 && swiperDisable) {
-    let swiper = new Swiper('.swiper', {
+function switchSlider() {
+  if(window.innerWidth < 768 && slider.dataset.mobile == 'false') {
+    brandSwiper = new Swiper(slider, {
       slidesPerView: 1,
       width: 240,
       height: 72,
@@ -16,11 +17,24 @@ window.addEventListener('resize', function () {
         spaceBetween: 12,
       },
     });
-  } 
-  
-  if (this.innerWidth >= 768) {
-    swiper.destroy();
+
+    slider.dataset.mobile = 'true';
+  };
+
+  if (window.innerWidth >= 768) {
+    slider.dataset.mobile = 'false';
+
+    if(slider.classList.contains('swiper-initialized')){
+      brandSwiper.destroy();
+    }
   }
+};
+
+switchSlider();
+
+window.addEventListener('resize', () => {
+  switchSlider()
 });
+
 
 
