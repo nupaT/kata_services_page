@@ -6,7 +6,7 @@ $colorPaginationActive: #B5B6BC;
 .swiper {
 
   &-wrapper {
-    padding: 0 0 26px 0;
+    padding: 0 0 37px 0;
 
     @media (min-width: 768px) {
       @media (max-width: 1119px) {
@@ -20,6 +20,12 @@ $colorPaginationActive: #B5B6BC;
 
   &-slide {
     display: flex;
+
+    @media (min-width: 768px) {
+      @media (max-width: 1119px) {
+        max-width: 224px !important;
+      }
+    }
     
     &_link {
       height: 72px !important;
@@ -53,7 +59,7 @@ $colorPaginationActive: #B5B6BC;
     justify-content: center !important;
     
     &-horizontal {
-      column-gap: 12px !important;
+      column-gap: 7px !important;
     }
 
     &-bullet {

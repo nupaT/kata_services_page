@@ -191,6 +191,7 @@ h6 {
 
 .main {
   background-color: #F8F8F8;
+  padding: 24px 16px 0;
 }
 @media (min-width: 768px) and (max-width: 1119px) {
   .main {
@@ -204,8 +205,13 @@ h6 {
 }
 .main__container {
   display: flex;
-  margin: 0 0 32px 0;
+  margin: 0 0 24px 0;
   justify-content: space-between;
+}
+@media (min-width: 768px) and (max-width: 1119px) {
+  .main__container {
+    margin: 0 0 32px 0;
+  }
 }
 .main__container_title {
   font-family: "TTLakesBold";
@@ -217,11 +223,16 @@ h6 {
 .main__container_title::before {
   content: "";
   position: relative;
-  left: -24px;
+  left: -16px;
   height: inherit;
   border-right: 4px solid #41f6d7;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
+}
+@media (min-width: 768px) and (max-width: 1119px) {
+  .main__container_title::before {
+    left: -24px;
+  }
 }
 .main__container_actions {
   display: none;
@@ -248,6 +259,7 @@ h6 {
   background-color: #c81349;
 }
 .main__navigation {
+  margin: 0 0 24px 0;
   overflow-x: auto;
 }
 @media (min-width: 768px) and (max-width: 1119px) {
@@ -316,6 +328,9 @@ h6 {
     padding: 10px 26px 0 19px;
   }
 }
+.main__about_text-container {
+  margin: 0 0 16px 0;
+}
 .main__about_text {
   max-height: 90px;
   max-width: 288px;
@@ -350,18 +365,9 @@ h6 {
   }
 }
 .main__signboard {
-  margin: 0 0 32px 0;
-  padding: 16px 0 0 0;
-}
-@media (min-width: 768px) and (max-width: 1119px) {
-  .main__signboard {
-    padding: 0;
-  }
-}
-@media (min-width: 1120px) {
-  .main__signboard {
-    padding: 0;
-  }
+  margin: 0 -16px 15px;
+  padding: 0 0 24px 0;
+  border-bottom: 1px solid #D9FFF5;
 }
 @media (min-width: 768px) and (max-width: 1119px) {
   .main__signboard_img--320 {
@@ -395,7 +401,7 @@ h6 {
   }
 }
 .main__brands_title {
-  margin: 0 0 16px 0;
+  margin: 0 0 32px 0;
   font-family: "TTLakesRegular";
   font-size: 16px;
   line-height: 24px;
@@ -634,7 +640,7 @@ h6 {
   }
 }
 .swiper-wrapper {
-  padding: 0 0 26px 0;
+  padding: 0 0 37px 0;
 }
 @media (min-width: 768px) and (max-width: 1119px) {
   .swiper-wrapper {
@@ -647,6 +653,11 @@ h6 {
 }
 .swiper-slide {
   display: flex;
+}
+@media (min-width: 768px) and (max-width: 1119px) {
+  .swiper-slide {
+    max-width: 224px !important;
+  }
 }
 .swiper-slide_link {
   height: 72px !important;
@@ -675,8 +686,8 @@ h6 {
   justify-content: center !important;
 }
 .swiper-pagination-horizontal {
-  -moz-column-gap: 12px !important;
-       column-gap: 12px !important;
+  -moz-column-gap: 7px !important;
+       column-gap: 7px !important;
 }
 .swiper-pagination-bullet {
   margin: 0 !important;
