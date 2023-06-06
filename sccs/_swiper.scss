@@ -14,16 +14,19 @@ $colorPaginationActive: #B5B6BC;
         flex-wrap: wrap;
         column-gap: 24px;
         row-gap: 16px;
+        height: 140px !important;
       }
     }
   }
 
   &-slide {
     display: flex;
+    height: 72px !important;
 
     @media (min-width: 768px) {
       @media (max-width: 1119px) {
         max-width: 224px !important;
+        
       }
     }
     
@@ -34,6 +37,7 @@ $colorPaginationActive: #B5B6BC;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      background-color: #FFFFFF;
       border: 1px solid #EAEAEA;
       border-radius: 6px;
 

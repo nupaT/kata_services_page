@@ -40,10 +40,16 @@ window.addEventListener('resize', () => {
 // !!
 
 let readMore = document.querySelector('.main__about_show_more-btn');
-let showTExt = document.querySelector('.main__about_text');
+let showAbout = document.querySelector('.main__about_text');
+let expand = document.querySelector('.expand');
+
+// if(showAbout.classList.contains('main__about_text--show')){
+//   showAbout.classList.remove('main__about_text--show');
+// }
 
 readMore.addEventListener('click', () => {
-  showTExt.classList.toggle('main__about_text--show');
+  showAbout.classList.toggle('main__about_text--show');
+  expand.classList.toggle('expand--opened')
 })
 
 

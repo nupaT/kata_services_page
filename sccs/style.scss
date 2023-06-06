@@ -43,3 +43,19 @@ html {
     background-color:#c81349;
   }
 }
+
+
+@keyframes rotateExpand {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.expand--opened {
+  animation-name: rotateExpand;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}

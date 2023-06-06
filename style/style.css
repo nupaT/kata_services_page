@@ -314,11 +314,13 @@ h6 {
   line-height: 18px;
   letter-spacing: 0.1px;
   color: #1B1C21;
+  border-bottom: 1px solid #D9FFF5;
 }
 @media (min-width: 768px) and (max-width: 1119px) {
   .main__about {
     display: flex;
     justify-content: space-between;
+    margin: 0 0 22px 0;
   }
 }
 @media (min-width: 1120px) {
@@ -375,6 +377,11 @@ h6 {
   border-bottom: 1px solid #D9FFF5;
 }
 @media (min-width: 768px) and (max-width: 1119px) {
+  .main__signboard {
+    margin: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1119px) {
   .main__signboard_img--320 {
     display: none;
   }
@@ -418,6 +425,17 @@ h6 {
   .main__brands_title {
     display: flex;
     margin: 0 0 40px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1120px) {
+  .main__brands_show_more-btn {
+    display: flex;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    padding: 10px 0 0 0;
   }
 }
 
@@ -654,10 +672,12 @@ h6 {
     -moz-column-gap: 24px;
          column-gap: 24px;
     row-gap: 16px;
+    height: 140px !important;
   }
 }
 .swiper-slide {
   display: flex;
+  height: 72px !important;
 }
 @media (min-width: 768px) and (max-width: 1119px) {
   .swiper-slide {
@@ -671,6 +691,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #FFFFFF;
   border: 1px solid #EAEAEA;
   border-radius: 6px;
 }
@@ -721,4 +742,18 @@ html {
 }
 .button--circle:hover {
   background-color: #c81349;
+}
+
+@keyframes rotateExpand {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.expand--opened {
+  animation-name: rotateExpand;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
