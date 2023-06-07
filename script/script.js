@@ -39,17 +39,21 @@ window.addEventListener('resize', () => {
 
 // !!
 
-let readMore = document.querySelector('.main__about_show_more-btn');
+let readAboutBtn = document.querySelector('.main__about_show_more-btn');
 let showAbout = document.querySelector('.main__about_text');
+
 let expand = document.querySelector('.expand');
 
-// if(showAbout.classList.contains('main__about_text--show')){
-//   showAbout.classList.remove('main__about_text--show');
-// }
+let readBrandsBtn = document.querySelector('.main__brands_show_more-btn');
+let showBrands = document.querySelector('.swiper-wrapper');
 
-readMore.addEventListener('click', () => {
-  showAbout.classList.toggle('main__about_text--show');
-  expand.classList.toggle('expand--opened')
-})
+readAboutBtn.addEventListener('click', () => {
+  showAbout.classList.toggle('show');
+  expand.classList.toggle('expand--opened');
+});
+
+
+
+
 
 

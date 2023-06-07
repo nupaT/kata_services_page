@@ -353,10 +353,6 @@ h6 {
     max-height: 160px;
   }
 }
-.main__about_text--show {
-  max-height: 100%;
-  transition-duration: 0.8s;
-}
 .main__about_show_more-btn {
   display: flex;
   -moz-column-gap: 10px;
@@ -427,15 +423,18 @@ h6 {
     margin: 0 0 40px 0;
   }
 }
+.main__brands_show_more-btn {
+  display: none;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  padding: 10px 0 0 0;
+}
 @media (min-width: 768px) and (max-width: 1120px) {
   .main__brands_show_more-btn {
     display: flex;
-    -moz-column-gap: 10px;
-         column-gap: 10px;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    padding: 10px 0 0 0;
   }
 }
 
@@ -662,9 +661,6 @@ h6 {
     transform: rotate(360deg);
   }
 }
-.swiper-wrapper {
-  padding: 0 0 37px 0;
-}
 @media (min-width: 768px) and (max-width: 1119px) {
   .swiper-wrapper {
     display: flex !important;
@@ -672,7 +668,7 @@ h6 {
     -moz-column-gap: 24px;
          column-gap: 24px;
     row-gap: 16px;
-    height: 140px !important;
+    margin: 0 0 14px 0;
   }
 }
 .swiper-slide {
@@ -682,6 +678,11 @@ h6 {
 @media (min-width: 768px) and (max-width: 1119px) {
   .swiper-slide {
     max-width: 224px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1119px) {
+  .swiper-slide--hide {
+    display: none !important;
   }
 }
 .swiper-slide_link {
@@ -754,6 +755,10 @@ html {
 }
 .expand--opened {
   animation-name: rotateExpand;
-  animation-duration: 0.5s;
+  animation-duration: 0.3s;
   animation-fill-mode: forwards;
+}
+
+.show {
+  max-height: 100%;
 }

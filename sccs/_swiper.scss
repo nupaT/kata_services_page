@@ -6,7 +6,7 @@ $colorPaginationActive: #B5B6BC;
 .swiper {
 
   &-wrapper {
-    padding: 0 0 37px 0;
+    
 
     @media (min-width: 768px) {
       @media (max-width: 1119px) {
@@ -14,7 +14,7 @@ $colorPaginationActive: #B5B6BC;
         flex-wrap: wrap;
         column-gap: 24px;
         row-gap: 16px;
-        height: 140px !important;
+        margin: 0 0 14px 0;
       }
     }
   }
@@ -26,8 +26,17 @@ $colorPaginationActive: #B5B6BC;
     @media (min-width: 768px) {
       @media (max-width: 1119px) {
         max-width: 224px !important;
-        
       }
+    }
+
+    &--hide {
+
+      @media (min-width: 768px) {
+        @media (max-width: 1119px) {
+          display: none !important;
+        }
+      }
+      
     }
     
     &_link {

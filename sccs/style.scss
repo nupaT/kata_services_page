@@ -56,6 +56,10 @@ html {
 
 .expand--opened {
   animation-name: rotateExpand;
-  animation-duration: .5s;
+  animation-duration: .3s;
   animation-fill-mode: forwards;
+}
+
+.show {
+  max-height: 100%;
 }
