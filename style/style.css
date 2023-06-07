@@ -680,9 +680,20 @@ h6 {
     max-width: 224px !important;
   }
 }
+@keyframes slideHide {
+  0% {
+    transform: scale(0) !important;
+  }
+  100% {
+    transform: scale(1) !important;
+  }
+}
 @media (min-width: 768px) and (max-width: 1119px) {
   .swiper-slide--hide {
     display: none !important;
+    animation-name: slideHide;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
   }
 }
 .swiper-slide_link {

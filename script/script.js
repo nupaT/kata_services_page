@@ -43,14 +43,28 @@ let readAboutBtn = document.querySelector('.main__about_show_more-btn');
 let showAbout = document.querySelector('.main__about_text');
 
 let expand = document.querySelector('.expand');
+let expandMoreList = document.querySelectorAll('.expandMore');
 
-let readBrandsBtn = document.querySelector('.main__brands_show_more-btn');
-let showBrands = document.querySelector('.swiper-wrapper');
+let showMoreBtn = document.querySelectorAll('.show_more-btn');
+const swiperSlideHide = document.querySelectorAll('.swiper-slide');
 
 readAboutBtn.addEventListener('click', () => {
   showAbout.classList.toggle('show');
   expand.classList.toggle('expand--opened');
 });
+
+function expandChange(expItem) {
+    expandMoreList[expItem].classList.toggle('expand--opened');
+};
+
+for (let elBtn = 0; elBtn < showMoreBtn.length; elBtn++) {
+  showMoreBtn[elBtn].addEventListener('click', () => {
+    expandChange(elBtn);
+    for (let i = 6; i < swiperSlideHide.length; i++) {
+      swiperSlideHide[i].classList.toggle('swiper-slide--hide');
+    };
+  });
+};
 
 
 

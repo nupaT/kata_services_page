@@ -7,7 +7,6 @@ $colorPaginationActive: #B5B6BC;
 
   &-wrapper {
     
-
     @media (min-width: 768px) {
       @media (max-width: 1119px) {
         display: flex !important;
@@ -31,12 +30,24 @@ $colorPaginationActive: #B5B6BC;
 
     &--hide {
 
+      @keyframes slideHide {
+        0% {
+          transform: scale(0) !important;
+        }
+        
+        100% {
+          transform: scale(1) !important;
+        }
+      }
+
       @media (min-width: 768px) {
         @media (max-width: 1119px) {
           display: none !important;
+          animation-name: slideHide;
+          animation-duration: .3s;
+          animation-fill-mode: forwards;
         }
       }
-      
     }
     
     &_link {
